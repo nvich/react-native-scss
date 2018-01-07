@@ -30,15 +30,15 @@ const glob = require("glob");
 export default class Project {
   constructor( options = {} ) {
     this.options = Object.assign({
-      inputPut: '',        // 编译文件路径匹配格式
-      outPut:(outPut) => {return outPut},           // 输出文件路径转换函数
-      watch: true,         // 是否进行监控
-      prettyPrint: true,   // 是否进行格式化打印
-      suffix: 'js',        // 输出文件格式
-      useEs6: true,        // 以es6输出
-      tsAble:false,        // 是否支持typescript
-      literalObject: true, // 不包括reactnative StyleSheet处理
-      specialParse: []     // 特殊处理
+      inputPut: '',
+      outPut:(outPut) => { return outPut },
+      watch: true,
+      prettyPrint: true,   // formatado
+      suffix: 'js',        // extensão de saída
+      useEs6: true,        // es6
+      tsAble:false,        // suporte a typescript
+      literalObject: true, // formato react-native
+      specialParse: []     // tratamento especial
     }, options);
 
     this.options.suffix = this.options.suffix[0] !== '.' ? '.' + this.options.suffix : this.options.suffix;
