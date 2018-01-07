@@ -12,6 +12,8 @@ const transform = keys => {
     let matches = values[i].match(/(.+)\((.+)\)/);
     let transformationType = matches[1];
     let transformation = matches[2];
+    let thisTransformation;
+    let thisTransformationValues;
 
     switch (transformationType) {
       case "perspective":
@@ -24,14 +26,14 @@ const transform = keys => {
       case "rotateX":
       case "rotateY":
       case "rotateZ":
-        let thisTransformation = {};
+        thisTransformation = {};
         thisTransformation[transformationType] = transformation;
         transformations.push(thisTransformation);
         break;
 
       case "rotate3d":
       case "rotate3D":
-        let thisTransformationValues = transformation.split(",");
+        thisTransformationValues = transformation.split(",");
         transformations.push(
           { rotateX: thisTransformationValues[0] },
           { rotateY: thisTransformationValues[1] },
@@ -42,7 +44,7 @@ const transform = keys => {
       case "scale":
       case "scaleX":
       case "scaleY":
-        let thisTransformation = {};
+        thisTransformation = {};
         thisTransformation[transformationType] = parseFloat(transformation);
         transformations.push(thisTransformation);
         break;
@@ -51,7 +53,7 @@ const transform = keys => {
       case "scale3D":
       case "scale2d":
       case "scale2D":
-        let thisTransformationValues = transformation.split(",");
+        thisTransformationValues = transformation.split(",");
         transformations.push(
           { scaleX: parseFloat(thisTransformationValues[0]) },
           { scaleY: parseFloat(thisTransformationValues[1]) }
@@ -60,7 +62,7 @@ const transform = keys => {
 
       case "translateX":
       case "translateY":
-        let thisTransformation = {};
+        thisTransformation = {};
         thisTransformation[transformationType] = parseFloat(transformation);
         transformations.push(thisTransformation);
         break;
@@ -69,7 +71,7 @@ const transform = keys => {
       case "translate3D":
       case "translate2d":
       case "translate2D":
-        let thisTransformationValues = transformation.split(",");
+        thisTransformationValues = transformation.split(",");
         transformations.push(
           { translateX: parseFloat(thisTransformationValues[0]) },
           { translateY: parseFloat(thisTransformationValues[1]) }
