@@ -1,7 +1,7 @@
 # React Native SCSS
 
-[![licence mit](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](http://app_descco.mit-license.org/)
-[![issues](https://img.shields.io/github/issues/descco-tools/prime-react-native.svg?style=flat-square)](https://github.com/descco-tools/prime-react-native/issues)
+[![licence mit](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](http://hemersonvianna.mit-license.org/)
+[![issues](https://img.shields.io/github/issues/descco-group/react-native-scss.svg?style=flat-square)](https://github.com/descco-group/react-native-scss/issues)
 
 ## Install
 
@@ -12,16 +12,15 @@ yarn
 ## Usage
 
 ```
-var {Project} = require('rn-css-js');
-
-var project = new Project({
-    inputPut: './css/**/!(_)*.{scss,css}',
-    outPut: (outPut)=>{
-        return outPut.replace(/\/css\//, '/test/')
-    },
-    useEs6:false,
-
+const { Project } = require('react-native-scss');
+const project = new Project({
+  inputPut: './css/**/!(_)*.{scss,css}',
+  outPut: (outPut) => {
+    return outPut.replace(/\/css\//, '/test/')
+  },
+  useEs6:false,
 });
+
 project.run();
 ```
 
@@ -31,8 +30,8 @@ project.run();
 
 ```
 .example {
-  border:1px solid #fff;
-  padding:1px 2px 4px 3px;
+  border: 1px solid #fff;
+  padding: 1px 2px 4px 3px;
   transform: scale(.9, 8) rotate(7deg);
   color: #000;
   font-size: 12px;
@@ -92,8 +91,8 @@ module.exports = {
 
 ## Log
 
-Check [Releases](https://github.com/descco-tools/prime-react-native/releases) for detailed changelog.
+Check [Releases](https://github.com/descco-group/react-native-scss/releases) for detailed changelog.
 
 ## License
 
-[MIT license](http://app_descco.mit-license.org/) © Hemerson Vianna
+[MIT license](http://hemersonvianna.mit-license.org/) © Hemerson Vianna
