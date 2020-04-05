@@ -12,7 +12,7 @@
   "dependencies": {
     "chokidar": "2.0.0",
     "css-parse": "2.0.0",
-    "minimist": "1.2.0",
+    "minimist": "1.2.3",
     "node-sass": "4.7.2",
     "to-camel-case": "1.0.0"
   },
