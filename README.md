@@ -1,12 +1,12 @@
 # React Native SCSS
 
 [![licence mit](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](http://hemersonvianna.mit-license.org/)
-[![GitHub issues](https://img.shields.io/github/issues/org-nekhemievich/react-native-scss.svg)](https://github.com/org-nekhemievich/react-native-scss/issues)
-![GitHub package.json version](https://img.shields.io/github/package-json/v/org-nekhemievich/react-native-scss.svg)
-![GitHub Release Date](https://img.shields.io/github/release-date/org-nekhemievich/react-native-scss.svg)
-![GitHub top language](https://img.shields.io/github/languages/top/org-nekhemievich/react-native-scss.svg)
-![GitHub repo size](https://img.shields.io/github/repo-size/org-nekhemievich/react-native-scss.svg)
-![GitHub All Releases](https://img.shields.io/github/downloads/org-nekhemievich/react-native-scss/total.svg)
+[![GitHub issues](https://img.shields.io/github/issues/nvich/react-native-scss.svg)](https://github.com/nvich/react-native-scss/issues)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/nvich/react-native-scss.svg)
+![GitHub Release Date](https://img.shields.io/github/release-date/nvich/react-native-scss.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/nvich/react-native-scss.svg)
+![GitHub repo size](https://img.shields.io/github/repo-size/nvich/react-native-scss.svg)
+![GitHub All Releases](https://img.shields.io/github/downloads/nvich/react-native-scss/total.svg)
 
 ## Install
 
@@ -96,7 +96,7 @@ module.exports = {
 
 ## Log
 
-Check [Releases](https://github.com/org-nekhemievich/react-native-scss/releases) for detailed changelog.
+Check [Releases](https://github.com/nvich/react-native-scss/releases) for detailed changelog.
 
 ## License
 

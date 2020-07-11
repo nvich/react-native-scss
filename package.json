@@ -6,7 +6,7 @@
     "test": "",
     "start": "babel source --out-dir build --presets es2015"
   },
-  "repository": "git@github.com:descco-group/react-native-scss.git",
+  "repository": "git@github.com:nvich/react-native-scss.git",
   "author": "Hemerson Vianna <hemerson.lourenco@gmail.com>",
   "license": "MIT",
   "dependencies": {
